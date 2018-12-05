@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./xds.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>XDS - x.ai design system</title>
+</head>
+<body id="xds" style="padding: 40px;">
+
+  <!-- create pages -->
+<div id="create-pages" class="rows gap-30 center hidden">
+
+    <!-- header -->
+    <div class="rows center">
+      <h2>Create calendar pages</h2>
+    </div>
+
+    <!-- pages -->
+    <div class="cols responsive width-800 gap-40">
+
+      <!-- left -->
+      <div class="flex-1  ">
+
+        <!-- zero state -->
+        <div id="zero-state" class="rows gap-10">
+          <div class="cols center">
+            <img class="width-300" src="./images/zero-state.png" alt="zero state">
+          </div>
+          <div class="rows gap-5">
+            <h3>Your calendar pages</h3>
+            <p>
+              Create calendar pages to book meetings. Each url is connected
+              to a location. You can customize scheduling times, or restrict
+              how many meetings can be scheduled in one day.
+            </p>
+          </div>
+        </div>
+
+        <!-- urls -->
+        <div id="urls" class="box-borders rows gap-10 pad-20 hidden">
+          <!-- url -->
+          <div class="cols gap-3">
+            <div class="flex-1 rows gap-5">
+              <h3>x.ai/calendar/kevin/hangout</h3>
+              <div class="details">
+                Google Hangouts, 30 minutes
+              </div>
+              <div class="input-switch">
+                <input checked type="checkbox" id="active-page" />
+                <label for="active-page"></label>
+              </div>        
+            </div>
+            <div class="input-ellipsis">
+              <select>
+                <option>Copy URL</option>
+                <option>Open page in new window</option>
+                <option>Deactivate page</option>
+                <option>Delete page</option>
+              </select>
+            </div>  
+          </div>
+        </div>
+    
+      </div>
+
+      <!--  -->
+
+      <!-- right -->
+      <div class="flex-1 rows gap-15 ">
+
+        <!-- buttons create url -->
+        <div id="buttons-url" class="rows gap-15">
+          <div class="cols gap-5 responsive">
+            <button class="button primary responsive">Create your URL</button>
+          </div>
+          <hr />
+        </div>
+
+        <!-- buttons create page -->
+        <div id="buttons-page" class="rows gap-15 hidden">
+          <div class="cols gap-5 responsive">
+            <button class="button primary responsive">Create new page</button>
+            <button class="button secondary responsive">Edit your URL</button>
+          </div>
+          <hr />
+        </div>
+
+        <!-- create new page -->
+        <div id="create-url" class="box-borders rows gap-10 pad-20 hidden">
+          <div class="rows gap-5">
+            <h3>Create your first page</h3>
+            <p>
+              Enter your base URL below. A new page will automatically be created from your default location.
+            </p>          
+          </div>
+          <div class="cols gap-10 start-center">
+            <div class="input-url cols start-center">
+              <div>x.ai/calendar/kevin/</div>
+              <input class="width-150" type="text" value="phone-call">
+            </div>    
+          </div>
+          <div class="cols gap-5 responsive">
+              <button class="button primary responsive">Submit</button>
+              <button class="button negative responsive">Cancel</button>  
+          </div>
+        </div>
+
+        <!-- what guests -->
+        <div id="what-guests" class="rows gap-15">
+          <h3>What your guests will experience</h3>
+          <ol class="circled">
+            <li>
+              You send the link
+              <!-- <a href="#">https://my.x.ai/calendar/kevin</a> -->
+              to your guests
+            </li>
+            <li>
+              Guests pick an time and submit their name and email on your
+              website
+            </li>
+            <li>A calendar invite is sent to all attendees</li>
+            <li>
+              One day before the meeting, a reminder is sent to the user.
+            </li>
+          </ol>
+        </div>
+
+      </div>
+    </div>
+
+</div>
+
+<!-- page -->
+<div id="page" class="rows center">
+
+  <!-- header -->
+  <h2>Create page</h2>
+
+  <div class="width-800 rows gap-5">
+
+    <!-- back -->
+    <div>
+      <button class="button small cols gap-10 center ">
+        <div class="icon-triangle left"></div>
+        <div>Back</div>
+      </button>
+    </div>    
+
+    <!-- form -->
+    <form class="box-borders rows gap-30 pad-20-30">
+
+      <!-- Location -->
+      <div class="rows gap-5">
+        <h4>Meeting Location</h4>
+        <div class="input-select width-300 responsive">
+          <select>
+            <option>Select a location</option>
+            <option>Phone Call</option>
+            <option>Zoom</option>
+            <option>Skype</option>
+          </select>
+        </div>      
+      </div>
+
+      <!-- Event -->
+      <div class="rows gap-5">
+        <h4>Event Name</h4>
+        <div class="input-text width-300 responsive">
+          <input type="text" name=""  />
+        </div>   
+      </div>
+  
+      <!-- Page urls -->
+      <div class="rows gap-5">
+        <h4>Page Url</h4>
+        <div class="cols gap-10 start-center">
+          <div class="input-url width-350 cols start-center">
+            <div>x.ai/calendar/kevin/</div>
+            <input class="" type="text" value="phone-call">
+          </div>   
+          <div class="icon-check">
+            <svg class="check" height="22" viewBox="0 0 22 22" width="22" xmlns="http://www.w3.org/2000/svg"><path d="m3 11.4 4.8 4.8 11.2-11.2" fill="none" stroke="#4ac287" stroke-width="3"/></svg>          
+          </div>     
+        </div>
+      </div>
+      
+      <!-- Greeting -->
+      <div class="rows gap-5">
+        <h4>Greeting</h4>
+        <div class="input-textarea width-350 responsive">
+          <textarea>Schedule a call with me. Just select a time and we’ll both receive an invite.</textarea>
+        </div>        
+      </div>
+  
+      <hr />
+  
+      <!-- Scheduling Duration -->
+      <div class="rows gap-5">
+        <h4>Meeting Duration</h4>
+        <div class="input-range width-300 responsive">
+          <input type="range" min="0" max="3" />
+          <div class="labels">
+            <span class="m15">15</span>
+            <span class="m30">30</span>
+            <span class="m45">45</span>
+            <span class="m60">60</span>
+          </div>
+        </div>    
+      </div>
+  
+      <hr />
+
+      <div class="rows gap-10">    
+        <h4>Scheduling Hours</h4>
+        <div class="rows gap-10">
+
+          <!-- Default hours -->
+          <div class="rows gap-3">
+            
+            <!-- radio default -->
+            <div class="input-radio">
+              <input checked type="radio" name="hours" id="default" value="default" />
+              <label for="default">Default hours</label>
+            </div>
+
+            <!-- default hours -->            
+            <div id="default-hours" class="cols responsive gap-5 wrap start-center pad-l-30 hidden">
+              <div class="input-text">
+                  9:00 AM
+              </div>
+              <div class="text-center">to</div>              
+              <div class="input-text">
+                  6:00 PM
+              </div>
+              <div class="input-text">
+                  Weekdays
+              </div>
+            </div>  
+              
+          </div>
+
+          <!-- Custom hours -->
+          <div class="rows gap-3">
+
+            <!-- input -->
+            <div class="input-radio">
+              <input type="radio" name="hours" id="custom" value="custom" />
+              <label for="custom">Custom hours</label>
+            </div>
+  
+            <!-- custom hours -->
+            <div id="custom-hours" class="input-hours rows gap-10 pad-l-30">
+              <div class="cols responsive gap-5 wrap start-center">
+                <div class="input-select">
+                  <select>
+                    <option>6:00 AM</option>
+                    <option>6:30 AM</option>
+                    <option>7:00 AM</option>
+                  </select>                  
+                </div>
+                <div class="text-center">to</div>              
+                <div class="input-select">
+                  <select>
+                    <option>6:00 PM</option>
+                    <option>6:30 PM</option>
+                    <option>7:00 PM</option>
+                  </select>                    
+                </div>
+                <div class="input-select">
+                  <select>
+                    <option>Weekdays</option>
+                    <option>Weekends</option>
+                    <option>Mondays</option>
+                    <option>Tuesdays</option>
+                    <option>Wednesdays</option>
+                  </select>                    
+                </div>
+                <button class="button-delete"></button>              
+              </div>
+              <div>
+                <button class="button primary">Add more hours</button>            
+              </div>
+            </div>            
+  
+
+          </div>
+
+        </div>
+      </div>    
+
+      <hr />
+
+      <div class="rows gap-15">
+        <button class="button small cols gap-10 start-center ">
+          <div class="icon-triangle down"></div>
+          <div>Advanced Settings</div>
+        </button>
+        <div class="rows gap-15">
+          <div class="cols gap-10">
+            <p class="flex-1">
+                Auto confirm meetings for guests in my VIP list
+            </p>
+            <div class="input-switch width-50">
+              <input checked type="checkbox" id="active" />
+              <label for="active" ></label>
+            </div>        
+          </div>
+          <div class="cols gap-10">
+            <p class="flex-1">
+                Minutes of lead time when guests book on the same day
+            </p>
+            <div class="input-text width-50">
+              <input class="text-center" type="text" name="block" value="10" />
+            </div>
+          </div>
+          <div class="cols gap-10">
+            <p class="flex-1">
+                Display a maximum of time blocks per day 
+            </p>
+            <div class="input-text width-50">
+              <input class="text-center" type="text" name="block" value="10" />
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="cols responsive">
+          <div class="flex-1">
+            <div class="cols gap-5 responsive">
+              <button class="button primary responsive">Create page</button>
+              <button class="button negative responsive">Cancel</button>
+            </div>
+          </div>
+          <div>
+              <button class="button negative responsive">Delete page</button>
+          </div>
+        </div> 
+              
+        </div>
+      </div>
+
+    </form>
+
+  </div>
+
+</div>
+
+<script src="xds-meeting-urls-create.js"></script>
+
+</body>
+</html>

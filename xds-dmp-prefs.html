@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="./xds.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Daily Meeting Prep</title>
+</head>
+<body>
+
+<div id="xds">
+  <div class="hr-blue"></div>
+
+  <div class="rows gap-10 pad-20 center">      
+    
+    <!-- sign out -->
+    <div class="cols width-1200">
+      <div class="flex-1"></div>
+      <div>
+        <button class="button primary">Sign Out</button>
+      </div>
+    </div>       
+    
+    <!-- PREFERENCES & CALENDAR -->
+    <div class="rows gap-10">
+      
+      <!-- NAV -->
+      <div class="rows center gap-10 pad-15">
+
+        <!-- logo -->
+        <div class="icon-xai">
+          <svg height="152" viewBox="0 0 133 152" width="133" xmlns="http://www.w3.org/2000/svg"><g fill="#01a9ed" fill-rule="evenodd"><path d="m101.47 117.62-11.7199996 15.36h-.43l-22.42-30.7-22.93 30.7h-23l34.17-45.69-31.82-41.29h23.86l19.79 26.46 20-26.46h23.1899996l-31.4999996 41.29z"/><path d="m122.66 112.000042c5.883422.016558 10.641012 4.796509 10.629982 10.679944-.011031 5.883435-4.786511 10.645513-10.669953 10.640009-5.883443-.005503-10.650005-4.776508-10.650029-10.659953-.000011-2.832413 1.12721-5.548382 3.132841-7.548384 2.005631-2.000003 4.724757-3.119587 7.557159-3.111616z"/><path d="m124.86 86.31v-63.62h-116.42999959v121.17h72.53999999l-6.45 8.46h-74.54999999v-153.32h133.34999959v76.22z"/></g></svg>    
+        </div>      
+        
+        <!-- nav -->
+        <h2>Daily Meeting Prep</h2>
+        <ul class="cols gap-20">
+          <li>
+            <a href="#"><h3 class="active pad-5" >Preferences</h3></a>
+          </li>
+          <li>
+            <a href="#"><h3 class="inactive pad-5">Calendars</h3></a>
+          </li>
+        </ul>        
+      </div>
+
+      <!-- 1. PREFERENCES -->
+      <div class="cols responsive width-800 gap-30 ">
+
+        <!-- status -->
+        <div class="flex-1">
+          <p>
+            You currently are <strong>subscribed</strong> to Daily Meeting Prep. 
+          </p>      
+          <p>
+              Turn on and off different types of meeting recommendations on the right. 
+              You can always return to this page to adjust your preferences.
+          </p>      
+          <button class="button primary responsive">Unsubscribe</button>            
+        </div>        
+
+        <!-- checkboxes -->
+        <div class="flex-1 rows gap-15">
+
+          <!-- prefs details -->
+          <div class="cols gap-20">
+            <div class="input-checkbox">
+              <input checkbox type="checkbox" id="missing-details" />
+              <label for="missing-details"></label>
+            </div> 
+            <div class="rows gap-5">
+              <h4>Missing details from your invites</h4>
+              <p>Send alerts when a meeting needs a location, the agenda is missing, or a call needs a number.</p>
+
+              <!-- feedback -->
+              <div class="rows gap-10 pad-10-0 width-400">
+                <hr>
+                <p>How can we improve this alert?</p>
+                <div class="input-textarea">
+                  <textarea class="height-100"></textarea>
+                </div>
+                <div class="cols responsive gap-10">
+                  <button class="button button primary responsive">Submit</button>
+                  <button class="button button negative responsive">Cancel</button>
+                </div>
+                <!-- prompt -->
+                <div class="input-valid pad-10">
+                    Thank you for submitting feedback
+                </div>              
+              </div>  
+
+            </div>    
+          </div>
+
+          <!-- prefs conflict -->
+          <div class="cols gap-20">
+            <div class="input-checkbox">
+              <input checked type="checkbox" id="meeting-conflict" />
+              <label for="meeting-conflict"></label>
+            </div> 
+            <div class="rows gap-5">
+              <h4>Meeting conflicts</h4>
+              <p>
+                  Send alerts when two meetings overlap.
+              </p>
+            </div>        
+          </div>
+
+          <!-- preference travel -->
+          <div class="cols gap-20">
+            <div class="input-checkbox">
+              <input checked type="checkbox" id="conflict" />
+              <label for="conflict"></label>
+            </div> 
+            <div class="rows gap-5">
+              <h4>Meeting travel times</h4>
+              <p>
+                  Send alerts when travel time is greater than the time between two meetings.
+              </p>
+            </div>        
+          </div>
+
+          <!-- preference early -->
+          <div class="cols gap-20">
+            <div class="input-checkbox">
+              <input checked type="checkbox" id="conflict" />
+              <label for="conflict"></label>
+            </div> 
+            <div class="rows gap-5">
+              <h4>Early start time</h4>
+              <p>
+                  Send alerts for meetings earlier than your average start time 
+              </p>
+            </div>        
+          </div>
+
+          <!-- preference guest -->
+          <div class="cols gap-20">
+            <div class="input-checkbox">
+              <input checked type="checkbox" id="conflict" />
+              <label for="conflict"></label>
+            </div> 
+            <div class="rows gap-5">
+              <h4>Guest Profiles</h4>
+              <p>
+                  Send infomation with links to profile pages (such as LinkedIn, Github, or About.me) for guests I’m meeting with this week 
+              </p>
+            </div>        
+          </div>
+
+          <!-- preference weekly -->
+          <div class="cols gap-20">
+            <div class="input-checkbox">
+              <input checked type="checkbox" id="conflict" />
+              <label for="conflict"></label>
+            </div> 
+            <div class="rows gap-5">
+              <h4>Weekly Meeting Changes</h4>
+              <p>
+                  Send a summary of meeting changes such as guest cancellations or changes in your own status 
+              </p>
+            </div>        
+          </div> 
+
+          <!-- preference stats -->
+          <div class="cols gap-20">
+            <div class="input-checkbox">
+              <input checked type="checkbox" id="conflict" />
+              <label for="conflict"></label>
+            </div> 
+            <div class="rows gap-5">
+              <h4>Weekly Meeting Stats</h4>
+              <p>
+                  Send facts and figures about the week, including open blocks of time, types of meetings, and ways to create more free time
+              </p>
+            </div>        
+          </div>
+        </div>  
+        
+      </div>
+      
+      <!-- 2. CALENDAR -->
+      <div class="cols responsive width-800 gap-20 hidden">
+
+        <!-- description -->
+          <div class="flex-1 ">
+            <p>
+                Turn calendars on and off to determine which meetings are analyzed for recommendations.
+            </p>      
+          </div>
+        
+          <!-- calendars -->
+          <div class="flex-1 ">
+            
+            <div class="rows gap-20">
+    
+              <!-- calendar 1 -->
+              <div class="cols gap-20">
+                <div class="input-checkbox">
+                  <input checked type="checkbox" id="calendar" />
+                  <label for="calendar"></label>
+                </div> 
+                <div class="rows gap-5">
+                  <h4>kevin@human.x.ai</h4>     
+                </div>
+              </div>
+    
+              <hr>
+    
+              <!-- calendar 2 -->
+              <div class="cols gap-20">
+                <div class="input-checkbox">
+                  <input type="checkbox" id="company" />
+                  <label for="company"></label>
+                </div> 
+                <div class="rows gap-5">
+                  <h4>Company calendar</h4>
+                </div>        
+              </div>
+    
+              <!-- calendar 3 -->
+              <div class="cols gap-20">
+                <div class="input-checkbox">
+                  <input type="checkbox" id="contacts" />
+                  <label for="contacts"></label>
+                </div> 
+                <div class="rows gap-5">
+                  <h4>Contacts</h4>
+                </div>        
+              </div>
+              
+              <!-- connect button -->
+              <div>
+                <button class="button primary responsive">
+                    Connect new calendar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>      
+
+    </div>
+
+    <!-- 3. THANK YOU -->
+    <div class="rows center gap-10 hidden">
+      <!-- logo -->
+      <div class="icon-xai">
+        <svg height="152" viewBox="0 0 133 152" width="133" xmlns="http://www.w3.org/2000/svg"><g fill="#01a9ed" fill-rule="evenodd"><path d="m101.47 117.62-11.7199996 15.36h-.43l-22.42-30.7-22.93 30.7h-23l34.17-45.69-31.82-41.29h23.86l19.79 26.46 20-26.46h23.1899996l-31.4999996 41.29z"/><path d="m122.66 112.000042c5.883422.016558 10.641012 4.796509 10.629982 10.679944-.011031 5.883435-4.786511 10.645513-10.669953 10.640009-5.883443-.005503-10.650005-4.776508-10.650029-10.659953-.000011-2.832413 1.12721-5.548382 3.132841-7.548384 2.005631-2.000003 4.724757-3.119587 7.557159-3.111616z"/><path d="m124.86 86.31v-63.62h-116.42999959v121.17h72.53999999l-6.45 8.46h-74.54999999v-153.32h133.34999959v76.22z"/></g></svg>    
+      </div>      
+
+      <h2 class="text-center">Thank you for subscribing</h2>
+      <div class="rows center">
+        <img src="./images/zero-state.png" alt="zero-state" class="width-300">
+      </div>
+
+      <!--  -->
+      <div class="width-400">
+        <p>You currently are <strong>subscribed</strong> to Daily Briefing.</p>
+        <p>
+           Ipsum dolor, sit amet consectetur adipisicing elit. Expedita quasi nulla quisquam officiis, blanditiis fugiat fuga odit voluptatem voluptatibus iure illo.        
+        </p>      
+      </div>
+    </div>
+
+    
+  </div>  
+  
+</div>
+
+<script src="xds-dmp-prefs.js"></script>
+
+</body>
+</html>
