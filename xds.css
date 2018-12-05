@@ -256,7 +256,7 @@ html, body {
 /* Box */
 #xds .box-borders {
   width: 100%;
-  border: 1.5px solid hsl(204, 30%, 85%);
+  border: 2px solid hsl(204, 30%, 85%);
   border-radius: 15px;
 }
 
