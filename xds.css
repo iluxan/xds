@@ -1,3 +1,17 @@
+:root {
+  --cyan: #01A9ED;
+  --black: hsl(204, 97%, 24%);
+  --grey45: hsl(204, 30%, 45%);
+  --grey55: hsl(204, 30%, 55%);
+  --grey65: hsl(204, 30%, 65%);
+  --grey85: hsl(204, 30%, 85%);
+  --grey95: hsl(204, 30%, 95%);
+  --greendark: hsl(110, 45%, 35%);
+  --greenlight: hsl(110, 60%, 95%);
+  --red: hsl(360, 45%, 55%);
+  --redlight: hsl(360, 70%, 95%);
+}
+
 /* reset */
 html, body {
   margin: 0;
@@ -9,7 +23,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: "Avenir Next", Arial, Helvetica, sans-serif;
-  color: hsl(204, 97%, 24%);
+  color: var(--black);
   background-color: transparent;
   font-size: 16px;  
   line-height: 18px;  
@@ -53,7 +67,7 @@ html, body {
 #xds hr {
   background: transparent;
   border: none;
-  border-bottom: 2px solid hsl(204, 30%, 85%);  
+  border-bottom: 2px solid var(--grey85);  
 }
 #xds p {
   line-height: 22px;
@@ -65,7 +79,7 @@ html, body {
 #xds a {
   font-weight: 600;
   text-decoration: none;
-  color: #01A9ED;
+  color: var(--cyan);
 }
 #xds strong {
   font-weight: 600;
@@ -82,7 +96,7 @@ html, body {
 /* Classes */
 /*  text */
 #xds .details {
-  color: hsl(204, 30%, 45%);
+  color: var(--grey45);
 }
 #xds .ellipsis {
   text-overflow: ellipsis; 
@@ -90,18 +104,18 @@ html, body {
   white-space: nowrap;    
 }  
 #xds .active {
-  border-bottom: 2.5px solid #01A9ED;
+  border-bottom: 2.5px solid var(--cyan);
 }  
 #xds .inactive {
-  color:hsl(204, 30%, 65%);
+  color:var(--grey65);
 }  
 /* rules */
 #xds .hr-blue {
-  border-top: 9px solid #01A9ED;
+  border-top: 9px solid var(--cyan);
   width: 100%;
 }    
 #xds .vr {
-  border-left:1.5px solid hsl(204, 30%, 85%);
+  border-left:1.5px solid var(--grey85);
 }    
 /* avatar */
 #xds .avatar {
@@ -129,7 +143,7 @@ html, body {
   position: absolute;
   content: counter(book-counter);
   color: white;
-  background: #01A9ED;
+  background: var(--cyan);
   font-weight: 600;
   font-size: 14px;
   text-align: center;
@@ -142,10 +156,10 @@ html, body {
 }
 /* misc */
 #xds ::placeholder {
-  color: hsl(204, 30%, 55%);
+  color: var(--grey55);
 }
 #xds .code {
-  color: hsl(204, 30%, 65%); 
+  color: var(--grey65); 
   font-family: 'Menlo', Courier, monospace;
   font-size: 12px;
   font-weight: 500;
@@ -193,23 +207,26 @@ html, body {
 
 #xds .button {
   font-weight: 600;
-  line-height: 34px;
-  border-radius: 22px;
-  padding: 0 20px;
   cursor: pointer;
   text-align: center;
+  border-radius: 18px;
+  /* line-height: 34px; */
 }
 #xds .button.primary {
-  background-color: #01A9ED;
-  border: solid 1.5px #01A9ED;
+  background-color: var(--cyan);
+  padding: 10px 20px;
   color: white;
+  /* border: solid 2px var(--cyan); */
 }
 #xds .button.secondary {
-  color: #01A9ED;
-  border: solid 1.5px #01A9ED;
+  color: var(--cyan);
+  border: solid 2px var(--cyan);
+  padding: 8px 20px;
+  /* line-height: 31px; */
 }
 #xds .button.negative {
-  background: hsl(204, 30%, 95%);
+  background: var(--grey95);
+  padding: 10px 20px;
 }
 #xds .button.small {
   padding: 0;
@@ -218,10 +235,24 @@ html, body {
   font-weight: 600;
   text-transform: uppercase;
 }
+#xds .button.primary.thin {
+  font-weight: 550;
+  font-size: 13px;
+  padding: 2px 16px;
+  border-radius: 18px;
+}
+#xds .button.secondary.thin {
+  font-weight: 550;
+  font-size: 13px;
+  padding: 1px 16px;
+  border-radius: 18px;
+}
 #xds .button.thin {
   line-height: 26px;
   font-weight: 550;
   font-size: 13px;
+  padding: 3px 16px;
+  border-radius: 18px;
 }
 @media (max-width:415px){
   #xds .button.responsive {
@@ -231,7 +262,7 @@ html, body {
 /* input delete */
 #xds .button.delete {
   padding: 0;
-  background: hsl(204, 30%, 95%);
+  background: var(--grey95);
   border-radius: 18px;
   cursor: pointer;
   height: 38px;
@@ -256,7 +287,7 @@ html, body {
 /* Box */
 #xds .box-borders {
   width: 100%;
-  border: 2px solid hsl(204, 30%, 85%);
+  border: 2px solid var(--grey85);
   border-radius: 15px;
 }
 
@@ -269,8 +300,8 @@ html, body {
 #xds .input-select {
   padding: 8px 15px;
   border-radius: 4px;
-  background: hsl(204, 30%, 95%);
-  border: 1px solid hsl(204, 30%, 95%);
+  background: var(--grey95);
+  border: 1px solid var(--grey95);
 }
 #xds .input-text input {
   width: 100%;
@@ -308,18 +339,18 @@ html, body {
 #xds .input-textarea:focus-within,
 #xds .input-url:focus-within,
 #xds .input-select:focus-within {
-  border: 1px solid hsl(204, 30%, 55%);
+  border: 1px solid var(--grey55);
 }
 
 /* input-invalid */
 #xds .input-invalid {
-  background: hsl(360, 70%, 95%);
-  color: hsl(360, 45%, 55%);
+  background: var(--redlight);
+  color: var(--red);
   border-radius: 4px;
 }
 #xds .input-valid {
-  background: hsl(110, 60%, 95%);
-  color: hsl(110, 45%, 35%);
+  background: var(--greenlight);
+  color: var(--greendark);
   border-radius: 4px;
 }
 
@@ -338,7 +369,7 @@ html, body {
 #xds .input-textarea textarea {
   margin-top: 5px;
   width: 100%;
-  background: hsl(204, 30%, 95%);  
+  background: var(--grey95);  
   line-height: 18px;
 }
 
@@ -351,7 +382,7 @@ html, body {
   -webkit-appearance: none;
   appearance: none;
   outline: none;
-  border: 2px solid #01A9ED;  
+  border: 2px solid var(--cyan);  
   width: 23px;
   height: 23px;
   border-radius: 50%;
@@ -369,7 +400,7 @@ html, body {
   left: -27px;
 }
 #xds .input-radio input:checked + label:after {
-  background: #01A9ED;
+  background: var(--cyan);
 }
 #xds .input-radio label {
   display: inline-block;
@@ -400,7 +431,7 @@ html, body {
   top: -4px;
   left: -30px;
   content: '';
-  border: 1.5px solid hsl(204, 30%, 65%);
+  border: 1.5px solid var(--grey65);
   display: block;
   height: 17px;
   width: 17px;
@@ -426,8 +457,8 @@ html, body {
   content: '';
   width: 17px;
   height: 17px;  
-  background: #01A9ED;
-  border: 1.5px solid #01A9ED;
+  background: var(--cyan);
+  border: 1.5px solid var(--cyan);
   border-radius: 3px;
 }
 
@@ -455,7 +486,7 @@ html, body {
   width: 44px;
   height: 26px;
   border-radius: 13px;
-  background: hsl(204, 30%, 85%);
+  background: var(--grey85);
 }
 #xds .input-switch input[type="checkbox"] + label::after {
   /* knob */
@@ -479,7 +510,7 @@ html, body {
   width: 44px;
   height: 26px;
   border-radius: 13px;
-  background: #01A9ED;
+  background: var(--cyan);
 }
 #xds .input-switch input[type="checkbox"]:checked + label::after {
   /* knob */
@@ -500,7 +531,7 @@ html, body {
   width: 28px;
   height: 28px;
   border-radius: 15px;
-  background: hsl(204, 30%, 95%);
+  background: var(--grey95);
   text-align: center;
 }
 #xds .input-ellipsis select {
@@ -546,31 +577,31 @@ html, body {
   width: 100%;
   height: 3px;
   cursor: pointer;
-  background: #01A9ED;
+  background: var(--cyan);
 }
 #xds .input-range input::-webkit-slider-thumb {
   height: 20px;
   width: 20px;
   border-radius: 10px;
-  background: #01A9ED;
+  background: var(--cyan);
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -8.5px;
 }
 #xds .input-range input:focus::-webkit-slider-runnable-track {
-  background: #01A9ED;
+  background: var(--cyan);
 }
 #xds .input-range input::-moz-range-track {
   width: 100%;
   height: 3px;
   cursor: pointer;
-  background: #01A9ED;
+  background: var(--cyan);
 }
 #xds .input-range input::-moz-range-thumb {
   height: 20px;
   width: 20px;
   border-radius: 10px;
-  background: #01A9ED;
+  background: var(--cyan);
   cursor: pointer;
 }
 #xds .input-range input::-ms-track {
@@ -582,24 +613,24 @@ html, body {
   color: transparent;
 }
 #xds .input-range input::-ms-fill-lower {
-  background: #01A9ED;
+  background: var(--cyan);
 }
 #xds .input-range input::-ms-fill-upper {
-  background: #01A9ED;
+  background: var(--cyan);
 }
 #xds .input-range input::-ms-thumb {
   margin-top: 1px;
   height: 20px;
   width: 20px;
   border-radius: 10px;
-  background: #01A9ED;
+  background: var(--cyan);
   cursor: pointer;
 }
 #xds .input-range input:focus::-ms-fill-lower {
-  background: #01A9ED;
+  background: var(--cyan);
 }
 #xds .input-range input:focus::-ms-fill-upper {
-  background: #01A9ED;
+  background: var(--cyan);
 }
 #xds .input-range .labels {
   position: relative;
