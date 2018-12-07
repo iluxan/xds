@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- ios fix -->
+    <meta name="x-apple-disable-message-reformatting" />
+    <meta name="format-detection" content="telephone=no, date=no, address=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <style>
+      /* ios fix */
+      a[x-apple-data-detectors] {
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+      }
+
+      #xds * {
+        margin: 0;
+        padding: 0;
+        font-family: Helvetica, "Segoe UI", sans-serif;
+        color: #02253c;
+        font-size: 14px;
+        line-height: 14px;
+      }
+
+      /* tags */
+      #xds h3 {
+        font-size: 17px;
+        line-height: 19px;
+        font-weight: 600;
+      }
+      #xds p {
+        line-height: 17px;
+      }
+
+      /* classes */
+      #xds .container {
+        width: 100%;
+        max-width: 400px;
+      }
+      #xds .reminder,
+      #xds .location,
+      #xds .guests,
+      #xds .time {
+        color: #506573;
+      }
+      #xds .time {
+        text-align: right;
+      }
+      #xds .box-borders {
+        width: 100%;
+        border: 1.5px solid #d9d9d9;
+        border-radius: 15px;
+      }
+
+      /* buttons */
+      #xds .button-primary a,
+      #xds .button-outline a,
+      #xds .button-secondary a {
+        text-decoration: none;
+      }
+      #xds .button-primary {
+        max-width: 200px;
+        background-color: #01a9ed;
+        height: 32px;
+        line-height: 32px;
+        border-radius: 17px;
+        padding: 0 15px;
+        text-align: center;
+      }
+      #xds .white {
+        color: #ffffff;
+        font-weight: bold;
+      }
+      #xds .button-secondary {
+        max-width: 200px;
+        border: solid 1.5px #01a9ed;
+        height: 32px;
+        line-height: 32px;
+        border-radius: 17px;
+        padding: 0 15px;
+        text-align: center;
+      }
+      #xds .blue {
+        color: #01a9ed;
+        font-weight: bold;
+      }
+      #xds .button-outline {
+        max-width: 200px;
+        border: 1.5px solid #d9d9d9;
+        height: 32px;
+        line-height: 32px;
+        border-radius: 17px;
+        padding: 0 12px;
+        text-align: center;
+      }
+      #xds .black {
+        color: #02253c;
+        font-weight: bold;
+      }
+
+      /* util */
+      #xds .width-70 {
+        width: 70%;
+        display: inline-block;
+        vertical-align: top;
+      }
+      #xds .width-50 {
+        width: 45%;
+        display: inline-block;
+        vertical-align: top;
+      }
+      #xds .width-30 {
+        width: 28%;
+        display: inline-block;
+        vertical-align: top;
+      }
+
+      #xds .center {
+        display: block;
+        margin: 0 auto;
+      }      
+      #xds .hmargin-5 > * {
+        display: inline-block;
+        margin-right: 5px;
+      }
+      #xds .hmargin-5 > *:last-child {
+        margin-right: 0;
+      }
+      #xds hr {
+        background: transparent;
+        border: none;
+        border-bottom: 2px solid #d9d9d9;
+      }
+      #xds .vr {
+        border-left: 1.5px solid #d9d9d9; /* vertical rule */
+      }
+
+      /* utils */
+      #xds .pad-15-20 {
+        padding: 15px 20px;
+      }
+      #xds .pad-l-15 {
+        padding-left: 20px;
+      }
+      #xds .vmargin-20 > * {
+        margin-bottom: 20px;
+        display: block;
+      }
+      #xds .vmargin-20 > *:last-child {
+        margin-bottom: 0;
+      }
+      #xds .vmargin-10 > * {
+        margin-bottom: 10px;
+        display: block;
+      }
+      #xds .vmargin-10 > *:last-child {
+        margin-bottom: 0;
+      }
+      #xds .vmargin-5 > * {
+        margin-bottom: 5px;
+        display: block;
+      }
+      #xds .vmargin-5 > *:last-child {
+        margin-bottom: 0;
+      }
+      #xds .vmargin-3 > * {
+        margin-bottom: 5px;
+        display: block;
+      }
+      #xds .vmargin-3 > *:last-child {
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Daily Agenda start -->
+    <div id="xds">
+      <div class="vmargin-20 container">
+        <div class="">
+          <img
+            src="https://i.postimg.cc/zB2D3LRN/logo-xai.png"
+            class="center"
+            style="width: 60px;"
+          />
+        </div>
+
+        <!-- daily agenda -->
+        <div class="vmargin-5">
+          <p>
+            It's <strong>Monday, January 1st</strong> and here's your
+            highlights:
+          </p>
+          <div class="box-borders">
+            <div class="pad-15-20 vmargin-5">
+              <h3>Design Review</h3>
+              <div>
+                <ul class="vmargin-3 width-70">
+                  <li class="location">Black Fox Coffee</li>
+                  <li class="guests">Kate Lao, Georgia Black</li>
+                </ul>
+                <ul class="vmargin-3 width-30">
+                  <li class="time">10:00 AM</li>
+                  <li class="time">10:30 AM</li>
+                </ul>
+              </div>
+            </div>
+            <hr />
+            <div class="pad-15-20 vmargin-5">
+              <h3>Conference Call with Executive Team</h3>
+              <div>
+                <ul class="vmargin-3 width-70">
+                  <li class="location">2nd floor conference room</li>
+                  <li class="guests">Ann Tisa</li>
+                </ul>
+                <ul class="vmargin-3 width-30">
+                  <li class="time">1:00 PM</li>
+                  <li class="time">2:00 PM</li>
+                </ul>
+              </div>
+            </div>
+            <hr />
+            <div class="pad-15-20 vmargin-5">
+              <h3>Budget Review</h3>
+              <div>
+                <ul class="vmargin-3 width-70">
+                  <li class="location">3rd floor conference room</li>
+                  <li class="guests">Georgia Black, Shelly Ingram</li>
+                </ul>
+                <ul class="vmargin-3 width-30">
+                  <li class="time">1:30 PM</li>
+                  <li class="time">2:00 PM</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- conflict -->
+        <div class="vmargin-5">
+          <p>You have a <strong>meeting conflicts</strong> today:</p>
+          <div class="box-borders">
+            <div class="pad-15-20 vmargin-20">
+              <div>
+                <div class="width-50 vmargin-3">
+                  <h3>Budget Review</h3>
+                  <ul class="vmargin-3">
+                    <li class="location">Ken Tardin</li>
+                    <li class="guests">1:00 PM to 2:00 PM</li>
+                  </ul>
+                </div>
+                <div class="width-50 vmargin-3 vr pad-l-15">
+                  <h3>Conference Call</h3>
+                  <ul class="vmargin-3">
+                    <li class="location">Kate Leo, Georgia Black</li>
+                    <li class="guests">1:00 PM to 2:00 PM</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="vmargin-10">
+                <div class="button-primary center">
+                  <a href="#"> <span class="white">Edit meeting</span> </a>
+                </div>
+                <div class="button-secondary center">
+                  <a href="#">
+                    <span class="blue">Adjust this location</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- details missing -->
+        <div class="vmargin-5 ">
+          <p>
+            Some <strong>details may be missing</strong> from your meeting
+            invites:
+          </p>
+          <div class="box-borders">
+            <div class="pad-15-20 vmargin-10 ">
+              <p>
+                Weekly Production Sync at 2:00 PM
+                <strong>needs a location</strong>.
+              </p>
+              <div class="vmargin-10">
+                <div class="button-primary center">
+                  <a href="#"> <span class="white">Edit location</span> </a>
+                </div>
+                <div class="button-secondary center">
+                  <a href="#">
+                    <span class="blue">Adjust this location</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- early day -->
+        <div class="vmargin-5">
+          <p>You have an <strong>early day</strong> today:</p>
+          <div class="box-borders">
+            <div class="pad-15-20 vmargin-5">
+              <h3>Design Review</h3>
+              <div>
+                <ul class="vmargin-3 width-70">
+                  <li class="location">Black Fox Coffee</li>
+                  <li class="guests">Kate Lao, Georgia Black</li>
+                </ul>
+                <ul class="vmargin-3 width-30">
+                  <li class="time">10:00 AM</li>
+                  <li class="time">10:30 AM</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Daily Agenda end -->
+
+    <div style="height: 200px;"></div>
+
+    <!-- Meeting Reminder start -->
+    <div id="xds">
+      <div class="vmargin-20 container">
+        <div class="center">
+          <img
+            src="https://i.postimg.cc/zB2D3LRN/logo-xai.png"
+            class="center"
+            style="width: 60px;"
+          />
+        </div>
+
+        <!-- early day -->
+        <div class="vmargin-10">
+          <p>Your upcoming meeting with Jane is confirmed:</p>
+          <div class="box-borders vmargin-10">
+            <div class="pad-15-20 vmargin-5">
+              <h3>Design Review</h3>
+              <div>
+                <ul class="vmargin-3 width-70">
+                  <li class="location">Black Fox Coffee</li>
+                  <li class="guests">Kate Lao, Georgia Black</li>
+                </ul>
+                <ul class="vmargin-3 width-30">
+                  <li class="time">10:00 AM</li>
+                  <li class="time">10:30 AM</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="hmargin-5">
+            <div class="button-outline">
+              <a href="#"> <span class="black">View Meeting</span> </a>
+            </div>
+            <div class="button-outline">
+              <a href="#"> <span class="black">Reschedule</span> </a>
+            </div>
+            <div class="button-outline">
+              <a href="#"> <span class="black">Decline</span> </a>
+            </div>
+          </div>
+          <hr />
+          <div>
+            <p><strong>Amy Ingram</strong></p>
+            <p>Artificial intelligence that schedules meetings</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Meeting Reminder end -->
+  </body>
+</html>

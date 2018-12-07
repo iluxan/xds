@@ -210,19 +210,16 @@ html, body {
   cursor: pointer;
   text-align: center;
   border-radius: 18px;
-  /* line-height: 34px; */
 }
 #xds .button.primary {
   background-color: var(--cyan);
   padding: 10px 20px;
   color: white;
-  /* border: solid 2px var(--cyan); */
 }
 #xds .button.secondary {
   color: var(--cyan);
   border: solid 2px var(--cyan);
   padding: 8px 20px;
-  /* line-height: 31px; */
 }
 #xds .button.negative {
   background: var(--grey95);
@@ -737,7 +734,7 @@ html, body {
 #xds .rows.gap-50 > *:last-child { margin-bottom: 0px; }
 
 /* layout center */
-#xds .center {
+#xds .center-center {
   justify-content: center;
   align-items: center;
 }
